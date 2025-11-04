@@ -32,10 +32,10 @@ _(Capture d’écran de l’application)_
 - Autres ressources...
 
 #### Progression
-- Semaine 1 : ...
-- Semaine 2 : ...
-- Semaine 3 : ...
-- Semaine 4 : ...
+- Semaine 1 : pokedex avec vue
+- Semaine 2 : pokedex avec vue
+- Semaine 3 : import de la BDD
+- Semaine 4 : mtn
 - ...
 
 ---
@@ -43,7 +43,7 @@ _(Capture d’écran de l’application)_
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de développement
-- **IDE** : VS Code / WebStorm / Autre
+- **IDE** : WebStorm
 - **Versioning** : Git + GitHub
 - **Dépendances principales** : Vue 3, Vuetify 3, Pinia, Axios/Fetch
 - **Gestion API Keys** : `.env` + `.env.example`
@@ -51,7 +51,7 @@ _(Capture d’écran de l’application)_
 ### Installation & Run
 - Cloner le repo :...
 - Installer :... 
-- Lancer :...
+- Lancer :npm run dev
 - Variables d’environnement : copier `.env.example` → `.env` et compléter les clés nécessaires  
 
 ### Méthodologie
@@ -63,8 +63,8 @@ _(Capture d’écran de l’application)_
 - ...
 
 ### Choix techniques
-- API sélectionnée :  
-- Justification du choix :  
+- API sélectionnée :  the movie db
+- Justification du choix : je n'avais rien trouver ducoup j'ai choisi une API qui a été fourni par le formateur
 - Endpoints utilisés :  
 - Limites/quotas connus :  
 
