@@ -1,4 +1,5 @@
 <template>
+<!--
   <v-footer
     app
     height="40"
@@ -34,9 +35,11 @@
       </a>
     </div>
   </v-footer>
+  -->
 </template>
 
 <script setup>
+/*
   const items = [
     {
       title: 'Vuetify Documentation',
@@ -68,10 +71,11 @@
       icon: `mdi-reddit`,
       href: 'https://reddit.com/r/vuetifyjs',
     },
-  ]
+  ]*/
 </script>
 
 <style scoped lang="sass">
+/*
   .social-link :deep(.v-icon)
     color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
     text-decoration: none
@@ -79,4 +83,5 @@
 
     &:hover
       color: rgba(25, 118, 210, 1)
+*
 </style>
