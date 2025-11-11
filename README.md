@@ -10,10 +10,10 @@
 
 ### Fonctionnalités principales
 - Affichage d’une liste d’éléments (via API)
-- Recherche / Tri / Filtres
+- Recherche 
 - Vue détail
-- Fonctionnalité interactive (favoris, watchlist, paramètres…)
-- Persistance locale (favoris ou préférences)
+- Fonctionnalité interactive (favoris, watchlist)
+- Persistance locale (favoris)
 
 ### Aperçu visuel
 _(Capture d’écran de l’application)_  
@@ -45,27 +45,26 @@ _(Capture d’écran de l’application)_
 - **IDE** : WebStorm
 - **Versioning** : GitHub
 - **Dépendances principales** : Vue 3, Vuetify 3, Pinia, Axios/Fetch
-- **Gestion API Keys** : `.env` + `.env.example`
+- **Gestion API Keys** : `.env`
 
 ### Installation & Run
 - Cloner le repo : git clone https://github.com/divtec-cejef/m294-projet-vuetify-spruchr
 - Installer : npm install
 - Lancer : npm run dev
-- Variables d’environnement : copier `.env.example` → `.env` et compléter les clés nécessaires
+- Variables d’environnement : 
+  VITE_API_BASE_URL=https://api.themoviedb.org/3/
+  VITE_API_KEY=YOUR_API_KEY
 
 ### Choix techniques
 - API sélectionnée :  the movie database
 - Justification du choix : je n'avais rien trouver ducoup j'ai choisi une API qui a été fourni par le formateur
 - Endpoints utilisés : https://api.themoviedb.org/3/movie/popular
-- Limites/quotas connus : beaucoup
+- Limites/quotas connus : 40 requête seconde
 
 ### Architecture (Descriptif + schéma simple + data-flow)
 - `App.vue` : layout principal  
 - `pages/` : pages (liste, détails, favoris)
-Outils utiles : Draw.io 
-
-**Data-flow résumé :**  
-- Vue déclenche un **event utilisateur** → composant appelle une fonction du **store** → ...
+Outils utiles : Draw.io
 
 ---
 
@@ -78,7 +77,7 @@ Outils utiles : Draw.io
 
 ### Tests d’UX
 - Navigation intuitive  
-- Recherche/filtre/tri faciles à comprendre  
+- Recherche faciles à comprendre  
 - Feedback utilisateur (loading, erreurs, vide)
 
 ### Tests d’accessibilité
@@ -87,15 +86,14 @@ Outils utiles : Draw.io
 - Navigation clavier possible
 
 ### Tests d’erreurs & fallback
-- API down → **mock fallback** affiché (fichier local ou données simulées)  
-- Liste vide → message clair affiché  
+- API down → **mock fallback** affiché (fichier local ou données simulées)
 - Recherche sans résultat → affichage “Aucun élément trouvé”
 
 ---
 
 ## 5. 🤖 Usage d’intelligence artificielle
 
-**⚠️ TRANSPARENCE OBLIGATOIRE** : Si vous utilisez une IA, vous DEVEZ :
+**⚠️ TRANSPARENCE OBLIGATOIRE** : 
 
 ### IA utilisée
 - **Nom** : ChatGPT / Claude 
@@ -121,25 +119,14 @@ Outils utiles : Draw.io
 
 ## 6. 🎯 Bilan personnel
 
-### Difficultés rencontrées
-- Problèmes techniques et solutions trouvées  
-- Moments de blocage et dépassement  
-- Aide reçue et sources  
-
 ### Réussites et fiertés
-- Aspects du projet dont je suis fier  
-- Progrès constatés depuis le début  
-- Envies de développement futur  
+- Aspects du projet dont je suis fier : projet en général
 
 ### Améliorations possibles
-- Ce que j’ajouterais avec plus de temps  
-- Fonctionnalités bonus envisagées  
-- Compétences à approfondir  
+- Ce que j’ajouterais avec plus de temps  : plus de catégorie et peut être les acteurs
 
 ---
 
 ## 7. 📚 Références & Sources
-- Documentation de l’API : [Nom de l’API](https://...)  
-- Tutos clés utilisés : ...  
+- Documentation de l’API : [the movie database](https://www.themoviedb.org/)
 - Usage de l’IA : voir section ci-dessus  
-- Autres ressources utiles : ...
