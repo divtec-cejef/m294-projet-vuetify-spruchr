@@ -24,7 +24,7 @@
       />
 
       <!-- Titre de l'application affiché dans la barre -->
-      <v-toolbar-title>Film</v-toolbar-title>
+      <v-toolbar-title>CinéVerse</v-toolbar-title>
 
       <!--
       Liens de navigation générés dynamiquement

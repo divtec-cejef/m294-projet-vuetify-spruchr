@@ -61,7 +61,7 @@ _(Capture d’écran de l’application)_
 
 ### Architecture (Descriptif + schéma simple + data-flow)
 - `App.vue` : layout principal  
-- `views/` : pages (liste, détail, favoris)
+- `pages/` : pages (liste, détails, favoris)
 Outils utiles : Draw.io 
 
 **Data-flow résumé :**  
@@ -75,26 +75,21 @@ Outils utiles : Draw.io
 - ✅ Appels API fonctionnels  
 - ✅ Persistance vérifiée après refresh (localStorage)  
 - ✅ Navigation entre les vues OK  
-- ...
 
 ### Tests d’UX
 - Navigation intuitive  
 - Recherche/filtre/tri faciles à comprendre  
-- Feedback utilisateur (loading, erreurs, vide)  
-- ...
+- Feedback utilisateur (loading, erreurs, vide)
 
 ### Tests d’accessibilité
 - Contraste couleurs (Vuetify par défaut)  
 - Labels et placeholders corrects  
-- Navigation clavier possible  
-- Focus visible  
-- ...
+- Navigation clavier possible
 
 ### Tests d’erreurs & fallback
 - API down → **mock fallback** affiché (fichier local ou données simulées)  
 - Liste vide → message clair affiché  
-- Recherche sans résultat → affichage “Aucun élément trouvé”  
-- ...
+- Recherche sans résultat → affichage “Aucun élément trouvé”
 
 ---
 
@@ -104,7 +99,7 @@ Outils utiles : Draw.io
 
 ### IA utilisée
 - **Nom** : ChatGPT / Claude 
-- **Version** : GPT-4/GPT-5-mini et   
+- **Version** : GPT-4/GPT-5-mini et Sonnet 4.5
 - **Contexte** : Aide ponctuelle / Génération de code / Debugging  
 
 ### Utilisation détaillée
@@ -124,18 +119,7 @@ Outils utiles : Draw.io
 - Routing & navigation : 20% personnel  
 - Tests & validation : 100% personnel  
 
-### Apprentissage personnel
-- Ce que j’ai appris grâce à l’IA  
-- Comment elle m’a aidé à progresser  
-
----
-
 ## 6. 🎯 Bilan personnel
-
-### Ce que j’ai appris
-- Compétences techniques acquises  
-- Découvertes surprenantes  
-- Concepts difficiles maîtrisés  
 
 ### Difficultés rencontrées
 - Problèmes techniques et solutions trouvées  
