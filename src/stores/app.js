@@ -25,6 +25,30 @@ export const useAppStore = defineStore('app', {
     //   }
     // },
 
+    // fontction pour récuperer les films par un JSON
+    async fetchFilmsFromJSON () {
+      try {
+        const response = await fetch('src/data/ApiTheMovieDatabaseReponse.json')
+        const data = await response.json()
+        let filmArray = []
+        if (Array.isArray(data)) {
+          // le JSON est directement un tableau
+          filmArray = data
+        } else if (data && Array.isArray(data.results)) {
+          // le JSON contient un objet avec une propriété 'résults' qui est le tableau
+          filmArray = data.results
+        } else {
+          // Cas par défaut : on affecte la valeur telle quelle
+          filmArray = data
+        }
+        this.films = filmArray
+        console.log('Films chargés depuis JSON :', this.films)
+      } catch (error) {
+        this.error = error
+        console.log(' Erreur fetchFilmFromJSON :', error)
+      }
+    },
+
     async fetchFilms () {
       try {
         const response = await api.get('movie/popular')
@@ -36,8 +60,9 @@ export const useAppStore = defineStore('app', {
       }
     },
     async init () {
-      //initialisation simple : recupere les donnes de lapi et les stocke dans this.ressources
-      await this.fetchFilms()
+      // initialisation simple : recupere les donnes de lapi et les stocke dans this.ressources
+      // await this.fetchFilms()
+      await this.fetchFilmsFromJSON()
     },
   },
 })

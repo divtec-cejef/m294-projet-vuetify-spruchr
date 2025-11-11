@@ -32,11 +32,10 @@ _(Capture d’écran de l’application)_
 - Autres ressources...
 
 #### Progression
-- Semaine 1 : pokedex avec vue
-- Semaine 2 : pokedex avec vue
-- Semaine 3 : import de la BDD
-- Semaine 4 : mtn
-- ...
+- Semaine 1 : import de l'API
+- Semaine 2 : ajouter du graphique
+- Semaine 3 : ajout de la page like, fonction pour rechercher et la fonction de like
+- Semaine 4 : ajout de routage par carte individuel
 
 ---
 
@@ -44,35 +43,26 @@ _(Capture d’écran de l’application)_
 
 ### Environnement de développement
 - **IDE** : WebStorm
-- **Versioning** : Git + GitHub
+- **Versioning** : GitHub
 - **Dépendances principales** : Vue 3, Vuetify 3, Pinia, Axios/Fetch
 - **Gestion API Keys** : `.env` + `.env.example`
 
 ### Installation & Run
-- Cloner le repo :...
-- Installer :... 
-- Lancer :npm run dev
-- Variables d’environnement : copier `.env.example` → `.env` et compléter les clés nécessaires  
-
-### Méthodologie
-- Découpage en composants réutilisables
-- Props & Emits clairs
-- Store global avec Pinia
-- Commits réguliers et explicites
-- Tests manuels (UI, persistance, erreurs API)
-- ...
+- Cloner le repo : git clone https://github.com/divtec-cejef/m294-projet-vuetify-spruchr
+- Installer : npm install
+- Lancer : npm run dev
+- Variables d’environnement : copier `.env.example` → `.env` et compléter les clés nécessaires
 
 ### Choix techniques
-- API sélectionnée :  the movie db
+- API sélectionnée :  the movie database
 - Justification du choix : je n'avais rien trouver ducoup j'ai choisi une API qui a été fourni par le formateur
-- Endpoints utilisés :  
-- Limites/quotas connus :  
+- Endpoints utilisés : https://api.themoviedb.org/3/movie/popular
+- Limites/quotas connus : beaucoup
 
 ### Architecture (Descriptif + schéma simple + data-flow)
 - `App.vue` : layout principal  
-- `views/` : pages (liste, détail, favoris)  
-- ...
-Outils utiles : Figma / Draw.io / ...
+- `views/` : pages (liste, détail, favoris)
+Outils utiles : Draw.io 
 
 **Data-flow résumé :**  
 - Vue déclenche un **event utilisateur** → composant appelle une fonction du **store** → ...
@@ -113,26 +103,25 @@ Outils utiles : Figma / Draw.io / ...
 **⚠️ TRANSPARENCE OBLIGATOIRE** : Si vous utilisez une IA, vous DEVEZ :
 
 ### IA utilisée
-- **Nom** : ChatGPT / Claude / GitHub Copilot / Autre  
-- **Version** : _(ex. GPT-4)_  
+- **Nom** : ChatGPT / Claude 
+- **Version** : GPT-4/GPT-5-mini et   
 - **Contexte** : Aide ponctuelle / Génération de code / Debugging  
 
 ### Utilisation détaillée
 **Domaines d'aide :**
-- Aide au code général : X%
-- Génération de snippets Vue/Vuetify : X%  
-- Aide à la structuration du projet : X%
-- Debugging : X%  
-- Recherche d’idées : X%  
+- Aide au code général : 50%  
+- Aide à la structuration du projet : 20%
+- Debugging : 75%  
+- Recherche d’idées : 0%  
 
 **Compréhension et adaptation**
 - Expliquer ce que fait le code généré  
 - Dire comment il a été adapté au projet  
 
 ### Parties codées manuellement
-- Composants principaux : X% personnel  
-- Store & persistance : X% personnel  
-- Routing & navigation : X% personnel  
+- Composants principaux : 50% personnel  
+- Store & persistance : 20% personnel  
+- Routing & navigation : 20% personnel  
 - Tests & validation : 100% personnel  
 
 ### Apprentissage personnel
